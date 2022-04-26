@@ -40,10 +40,14 @@
                 border-color:#005000;
                 background-color: #307f30;
             }
+            .selected-event{
+                border-color:#f08000;
+            }
         </style>
     </head>
     <body>
         <h1>York CS PhD Milestones</h1>
+        <div style="color: red;border:5px solid red; padding:3px;">WARNING! This is a work in progress preview, lots of the content is missing or badly formatted. Do not use this yet.</div>
         <div id="react_root">loading...</div>
         <script type="text/babel">
 
@@ -68,13 +72,9 @@
             }
 
             class TLSmallEvent extends React.Component {
-                constructor(props) {
-                    super(props);
-                }
-
                 render() {
                     return (
-                        <div class={this.props.events.length > 0?'month-event':'month-noevent'} style={{gridCol: this.props.moy}}>
+                        <div className={(this.props.events.length > 0?'month-event':'month-noevent') + (this.props.selected?' selected-event':'')} style={{gridCol: this.props.moy}}>
                             {this.props.events.map(ev=>
                                 ev.name
                             )}
@@ -88,10 +88,10 @@
                     const month = this.props.data.month[this.props.mode]||'?';
                     return (
                         <div>
-                            <h2>{this.props.data.name}</h2>
+                            <h4>{this.props.data.name}</h4>
                             <p>Requirements: {this.props.data.req}</p>
                             <p>Outcomes: {this.props.data.outcome}</p>
-                            <p>{this.props.data.details}</p>
+                            <div dangerouslySetInnerHTML={{__html:this.props.data.details}} />
                         </div>
                     );
                 }
@@ -113,12 +113,12 @@
                         ,now_month: new Date().getMonth()
                         ,now_year: new Date().getFullYear()
                         ,selection: null
+                        ,sel_year: null
                     }
                 }
 
                 is_done(m){
                     const months_done = ((this.state.now_year*12)+this.state.now_month) - ((this.state.start_year * 12) + this.state.start_month) + 2;
-                    console.log(this, "done", months_done, m);
                     return m <= months_done;
                 }
 
@@ -127,20 +127,29 @@
                     return m;
                 }
 
+                select(y, n) {
+                    if (this.state.data.events.filter(ev=>ev.month[this.state.mode] == n).length > 0) {
+                        this.setState({selection: n, sel_year: y});
+                    }
+                }
+
+                get_selected(){
+                    return this.state.data.events.filter(ev=>ev.month[this.state.mode] == this.state.selection)[0];
+                }
+
                 render() {
                     return (
                         <div>
                             <h2>Timeline</h2>
                             <input type='checkbox' id='check_parttime' onChange={ev=>{
                                 const mode = ev.target.checked?'pt':'ft';
-                                this.setState({mode, max_month: this.get_max_month(this.state.data, mode) });
+                                this.setState({mode, max_month: this.get_max_month(this.state.data, mode), selection: null, sel_year: null });
                             }} />
                             <label for='check_parttime'>Show Part-Time Milestones</label>
                             <br/>
                             <label for='start_month'>PhD Start Month</label>
                             <select id='start_month' onChange={ev=>{
                                 const t = parseInt(ev.target.selectedOptions[0].value);
-                                console.log(t);
                                 this.setState({start_month: t});
                             }}>
                                 <option value='1'>January</option>
@@ -169,16 +178,14 @@
                                                 <TLMonth key={'m'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} done={this.is_done(i+1+(12*y))} />
                                             )}
                                             {Array.from(Array(12).keys()).map(i=>
-                                                <TLSmallEvent key={'e'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} />
+                                                <div onClick={ev=>{this.select(y, (y*12)+i+1)}}><TLSmallEvent key={'e'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} selected={this.state.selection==((y*12)+i+1)} /></div>
                                             )}
                                         </div>
+                                        {
+                                            this.state.sel_year == y?<TLEvent data={this.get_selected()} mode={this.state.mode}/>:[]
+                                        }
                                     </div>
                                 )
-                            }
-                            {
-                            //    this.state.data.events.map(ev=>
-                            //        <div><TLEvent data={ev} mode={this.state.mode} /></div>
-                            //    )
                             }
                         </div>
                     );
