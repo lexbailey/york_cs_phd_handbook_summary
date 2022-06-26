@@ -43,6 +43,10 @@
             .selected-event{
                 border-color:#f08000;
             }
+            .month-event.ev-done {
+                color: #444;
+                border-color: #252525;
+            }
         </style>
     </head>
     <body>
@@ -64,7 +68,7 @@
                             if (this.props.done) {c.push('month-done')}
                             return c.join(' ');
                         })()
-                     }>
+                        }>
                             {this.props.m}
                         </div>
                     );
@@ -74,7 +78,7 @@
             class TLSmallEvent extends React.Component {
                 render() {
                     return (
-                        <div className={(this.props.events.length > 0?'month-event':'month-noevent') + (this.props.selected?' selected-event':'')} style={{gridCol: this.props.moy}}>
+                        <div className={(this.props.events.length > 0?'month-event':'month-noevent') + (this.props.selected?' selected-event':'') + (this.props.done?' ev-done':'')} style={{gridCol: this.props.moy}}>
                             {this.props.events.map(ev=>
                                 ev.name
                             )}
@@ -110,6 +114,7 @@
                         ,mode:this.props.default_mode
                         ,start_month: 10
                         ,start_year: 2021
+                        ,loa_months: 0
                         ,now_month: new Date().getMonth()
                         ,now_year: new Date().getFullYear()
                         ,selection: null
@@ -118,7 +123,7 @@
                 }
 
                 is_done(m){
-                    const months_done = ((this.state.now_year*12)+this.state.now_month) - ((this.state.start_year * 12) + this.state.start_month) + 2;
+                    const months_done = (((this.state.now_year*12)+this.state.now_month) - ((this.state.start_year * 12) + this.state.start_month) + 2) - this.state.loa_months;
                     return m <= months_done;
                 }
 
@@ -168,6 +173,9 @@
                             <br/>
                             <label for='start_year'>PhD Start Year</label>
                             <input id='start_year' type='number' min='2018' max='2090' value={this.state.start_year} onChange={ev=>this.setState({start_year:ev.target.value})} />
+                            <br />
+                            <label for='loa_months'>Total leave of absence months</label>
+                            <input id='loa_months' type='number' min='0' max='999' value={this.state.loa_months} onChange={ev=>this.setState({loa_months:ev.target.value})} />
                         
                             {
                                 Array.from(Array(Math.ceil(this.state.max_month/12)).keys()).map(y=>
@@ -178,7 +186,7 @@
                                                 <TLMonth key={'m'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} done={this.is_done(i+1+(12*y))} />
                                             )}
                                             {Array.from(Array(12).keys()).map(i=>
-                                                <div onClick={ev=>{this.select(y, (y*12)+i+1)}}><TLSmallEvent key={'e'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} selected={this.state.selection==((y*12)+i+1)} /></div>
+                                                <div onClick={ev=>{this.select(y, (y*12)+i+1)}}><TLSmallEvent key={'e'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} selected={this.state.selection==((y*12)+i+1)}  done={this.is_done(i+1+(12*y))}/></div>
                                             )}
                                         </div>
                                         {
