@@ -156,7 +156,7 @@ events:
             </ol>
             
             
-            <p>Using material other than the first-year report</p>
+            <h5>Using material other than the first-year report</h5>
             
             <p>You may be able to evidence some of the progression requirements using other things that you have produced in the first 11 months of your programme. </p>
             
@@ -167,7 +167,7 @@ events:
             <p>Please ensure that the appropriate section(s) of the report clearly explains which requirements are (partially) met by the material that you submit: you cannot expect the Progression Panel to work out why you think the material you submit evidences the requirement. </p>
             
             
-            Evidencing that criteria have been met
+            <h5>Evidencing that criteria have been met</h5>
             
             <p>The main evidence on which your progress is judged is your first-year report and your supervisor's progress report.</p>
             
@@ -181,8 +181,8 @@ events:
             <p>The plan, presented at the end of the first-year report and the supervisor’s comments on this in the supervisor’s progress report meet criterion (2). The text accompanying the plan should identify ethical and data management issues --evidencing criterion (6) --as well as any significant risks.</p>
             
             
-            <p>VLE Training: Students must complete the ‘Research Integrity Tutorial’ prior to their first TAP meeting. Research students are also expected to complete the ‘Being an Effective Researcher’ (BERT) and ‘Information Security Awareness’ tutorials within six months of the start of their programme, and must present at least one seminar during the first year (normally, the 25-minute seminar associated with the first TAP is sufficient, though you are encouraged to present your work to your research group regularly). Training is also discussed in the two TAP meetings.</p>
-            
+            <h5>VLE Training</h5>
+            <p>Students must complete the ‘Research Integrity Tutorial’ prior to their first TAP meeting. Research students are also expected to complete the ‘Being an Effective Researcher’ (BERT) and ‘Information Security Awareness’ tutorials within six months of the start of their programme, and must present at least one seminar during the first year (normally, the 25-minute seminar associated with the first TAP is sufficient, though you are encouraged to present your work to your research group regularly). Training is also discussed in the two TAP meetings.</p>
             
             <p>The supervisor’s report should confirm that required training has been completed, evidencing criterion (5). Note that the training requirement also meets requirement (6), since ethical issues and research data management are covered in the required tutorials and discussion prompted in TAP meetings by the TAP form.</p>
 
@@ -205,7 +205,7 @@ events:
       req: Completion of Progression Preparation Form in SkillsForge
       outcome: Decision and Recommendation
       details: |
-        <p>Details are missing for this event????</p>
+        <p>Details are missing for this event.</p>
 
     - name: Stage 2 TAP meeting 1
       month:
@@ -291,56 +291,67 @@ events:
             </li>
             <li> <span style='font-weight:bold;'>Background and context</span> is the section that evidences progression requirement 4, that you have begun to acquire the wider background knowledge of your research field required for the degree of PhD. There are three ways that the evidence can be presented in this section.
             
+            <ul> 
+            <li>The first year Progression Panel may have indicated that this second-year requirement has been met. In this case, this section can state that the evidence against criterion 4 was deemed to have been met, at year two level, by the year one progression panel.
+            <ul>
+            <li>You may (but are not required to) present extended coverage of the background and literature, suitable for the thesis review if this is useful to you at this point.</li>
             
-            a. The first year Progression Panel may have indicated that this second-year requirement has been met. In this case, this section can state that the evidence against criterion 4 was deemed to have been met, at year two level, by the year one progression panel. 
+            <li>The Progression Panel may check that you exceeded the first-year evidence requirement sufficiently to meet the second-year requirement, but will not evaluate any extra material submitted</li>
+            </ul></li>
+            <li>If you have a research paper (or papers) that includes literature and background review material, then this section of your report may briefly state that the paper(s) evidence (in full or in part) progression criterion 4. You may also include additional material, to cover aspects that are not fully addressed by the paper(s).
+            <ul>
+            <li>Your supervisor's report will be expected to comment on the adequacy of coverage.</li>
             
-            i. You may (but are not required to) present extended coverage of the background and literature, suitable for the thesis review if this is useful to you at this point.
-            
-            ii. The Progression Panel may check that you exceeded the first-year evidence requirement sufficiently to meet the second-year requirement, but will not evaluate any extra material submitted
-            
-            b. If you have a research paper (or papers) that includes literature and background review material, then this section of your report may briefly state that the paper(s) evidence (in full or in part) progression criterion 4. You may also include additional material, to cover aspects that are not fully addressed by the paper(s).
-            
-            i. Your supervisor's report will be expected to comment on the adequacy of coverage.
-            
-            ii. The progression panel will assess the adequacy of the evidence, taking into account the supervisor's comments.
-            
-            c. If neither of the first two applies, you need to use this section to summarise the literature and background for the main areas of the PhD. The review does not have to be in-depth (this skill was assessed in the year one progression), but does need to be sufficient to meet the evidence requirements, in breadth and rigour, including good citation and ample referencing.
-            
+            <li>The progression panel will assess the adequacy of the evidence, taking into account the supervisor's comments.</li>
+            </li></ul>
+            <li>If neither of the first two applies, you need to use this section to summarise the literature and background for the main areas of the PhD. The review does not have to be in-depth (this skill was assessed in the year one progression), but does need to be sufficient to meet the evidence requirements, in breadth and rigour, including good citation and ample referencing.
+            </li>
+            </ul>
             
             In all cases, the Background and context section should conclude with a short statement of how much more background and review scholarship is anticipated (in terms of both topics and time) for the thesis.
-            </li>
             
             <li> <span style='font-weight:bold;'>Methods</span> section clearly outlines the method(s) applied (or to be applied) in development, implementation, instrumentation, analysis and evaluation, as appropriate, to demonstrate that you meet the criterion to apply the relevant research methods, techniques and theoretical approaches required to make an original contribution to knowledge or understanding. In all the following points, you may instead state that your paper(s) (partially) evidence the point. Be clear how the paper does so.
             
-                The methods section is your submission of the department's required evidence to meet progression criterion 5. 
+                <ul>
+                <li>The methods section is your submission of the department's required evidence to meet progression criterion 5. </li>
             
-                The methods section will be the basis for methods chapter(s) in the thesis
+                <li>The methods section will be the basis for methods chapter(s) in the thesis
             
-                    if you have already applied some of the methods (etc.), include a brief summary of technical work and results
+                    <ul>
+                    <li>if you have already applied some of the methods (etc.), include a brief summary of technical work and results</li>
             
-                    for methods (etc.) that are still being applied, or will be applied in the future, please include a brief summary of what remains to be done, including time estimates and an outline of risks and mitigation: you may cross-reference the plan section of your report.
+                    <li>for methods (etc.) that are still being applied, or will be applied in the future, please include a brief summary of what remains to be done, including time estimates and an outline of risks and mitigation: you may cross-reference the plan section of your report.</li>
+                    </ul>
+                </li>
             
-                Note that you should include, at least in outline, methods that you will use in evaluation of your research
+                <li>Note that you should include, at least in outline, methods that you will use in evaluation of your research</li>
             
-                Please ensure that you summarise (or state that, and how, a paper evidences) the anticipated original contributions to knowledge or understanding 
+                <li>Please ensure that you summarise (or state that, and how, a paper evidences) the anticipated original contributions to knowledge or understanding </li>
             
+                </ul>
             
             Note that, as at first year progression, failure to evidence that you have mastered the practical skills required for the research may, in itself, be sufficient to fail progression.
             </li>
             
             <li><span style='font-weight:bold;'>Plan</span> for the remainder of the PhD. 
+                <ul>
             
-                The plan comprises the same elements as for the first year report, and should be structured according to the guidance for the first year report.
+                <li>The plan comprises the same elements as for the first year report, and should be structured according to the guidance for the first year report.
+                    <ul>
+                    <li>The plan section is your submission of the department's required evidenceto meet progression criteria 2 and 7.</li>
+                    </ul>
+                </li>
+                <li>The plan should, where possible, focus on completion of the PhD by the end of year 3. The plan should NOT assume that substantial research can be completed during the Continuation Year.
+                    <ul>
             
-                    The plan section is your submission of the department's required evidenceto meet progression criteria 2 and 7.
+                    <li>Whilst planning to continue research into the Continuation Year is not a grounds for failure of progression, the Progression Panel will look carefully at such a plan, and the evaluation of the risks entailed in running research into the Continuation Year.</li>
             
-                The plan should, where possible, focus on completion of the PhD by the end of year 3. The plan should NOT assume that substantial research can be completed during the Continuation Year.
+                    <li>The Progression Panel will be looking for clear and achievable milestones in your research, and a coherent overall plan for remaining research, evaluation, and writing-up.</li>
+                    </ul>
+                </li>
             
-                    Whilst planning to continue research into the Continuation Year is not a grounds for failure of progression, the Progression Panel will look carefully at such a plan, and the evaluation of the risks entailed in running research into the Continuation Year.
-            
-                    The Progression Panel will be looking for clear and achievable milestones in your research, and a coherent overall plan for remaining research, evaluation, and writing-up.
-            
-                The plan should include the intended structure of your thesis.
+                <li>The plan should include the intended structure of your thesis.</li>
+                </ul>
             </li>
             </ol>
             
@@ -371,14 +382,126 @@ events:
           pt: 54
       req: Draft PhD plan
       outcome: Agreed TAP form
+      details: |
+
+            The requirements for this TAP take the form of an audit of your progress against the thesis structure and outcomes. If your thesis structure is roughly as defined in the Year 2 Progression report, the audit report comprises a very brief update on the progress of each chapter. For every chapter that is now proposed, state:
+            <ol> 
+                <li>That the chapter has been completed in draft; or</li>
+            
+                <li>That the work for the chapter is complete and give an estimate of required writing time; or</li>
+            
+                <li>That the work for the chapter is incomplete, and explain clearly what needs to be done, estimating how much time is needed to complete and write up the work;</li>
+            
+                <li>Justify your estimates for points 2 and 3.</li>
+            </ol> 
+            
+            
+            If you have changed the structure of your thesis since the Year 2 Progression report, you will need to do one of the following, as appropriate:
+            
+            <ul> 
+                <li>If you have significantly changed the structure of your thesis, present the whole structure as for the first time, and add some commentary to your Introduction to justify and explain the restructuring.</li>
+            
+                <li>If you have a new chapter, not proposed in the plan in the progression report, present an outline of that chapter, using the section format described for the progression report.  </li>
+            
+                <li>If you have removed a chapter that was proposed, explain what is removed and why, and comment on the effect of this omission for your thesis.</li>
+            </ul> 
+            
+            
+            The Year 3 TAP 1 meeting briefly reviews your progress and any structural changes to the thesis. The TAP members may propose alternative content or structuring to you.  
+            <ul> 
+            
+                <li>You should also expect to discuss who will be your internal examiner, and possible external examiner(s), with your TAP.</li>
+            </ul> 
+            
+            
+            During the first months of year 3, you should be moving from planning and designing research, to actually completing it. This TAP meeting is an opportunity to review progress in your research, experimentation and evaluation. 
+            
+            
+            You should provide your TAP with a plan that covers:
+            
+            <ol> 
+                <li>The planned timing of remaining research and evaluation</li>
+            
+                <li>A structural outline of your thesis, comprising a list of chapters, against each of which there is an estimate ofhow much work is needed and how much writing is needed (in terms of weeks)</li>
+            </ol> 
+            
+            
+            The TAP meeting should discuss your plans, and assess whether you will be ready to submit your thesis by the end of year 3. This must be recorded in the TAP meeting form in SkillsForge.
+            
+            
+            Note, the PhD is a 3-year programme (for full-time students), so you should aim to submit your thesis by the end of month 36.
 
 
     - name: Stage 3 TAP meeting 2
       month:
           ft: 33
           pt: 66
-      req: Thesis Seminar
+      req: Thesis Seminar (40 minutes)
       outcome: Agreed TAP form
+      details: |
+            <p>Three months before your intended submission date (which should have been agreed at your previous TAP meeting) you should give a research seminar in a suitable departmental context.</p>
+            <ul>
+            <li>This may be part of a research group seminar series, or a one-off with an invited audience. </li>
+        
+            <li>Your TAP members should be present.</li>
+            </ul>
+        
+            <p>You are expected to present a specialist seminar that covers your approach and hypotheses, your method and research, your results and evaluation, and a critical commentary on your contribution to the research area. </p>
+        
+            <ul>
+            </li>You should present as if to an audience of doctoral students in your research group's area; the standard you should aim for is that of a prize-worthy presentation at an international conference. </li>
+        
+            </li>The seminar serves several purposes:
+                <ul>
+        
+                <li>To demonstrate that you can prepare and present a coherent account of your doctoral research;</li>
+        
+                <li>To inform and engage other researchers in your area;</li>
+        
+                <li>To allow other researchers to comment on your research whilst there is still time to take account of these in the thesis. For instance, identifying contributions that you may have overlooked, unrealistic or overlooked assumptions, missing background or better evaluation opportunities.</li>
+                </ul>
+            </li>
+            </ul>
+        
+        
+            <h5>Assessment</h5>
+            
+            <p>Your performance in the seminar is assessed on your:</p>
+            <ul>
+                <li>Oral presentation,</li>
+            
+                <li>Visuals,</li>
+            
+                <li>Selection of material, and</li>
+            
+                <li>Answers to questions.</li>
+            </ul>
+            
+            
+            <p>The supervisor(s) and assessor(or assessor's representative) should provide constructive feedback, orally and in the TAP meeting form.</p>
+            
+            
+            <p>The seminar is a training activity. A student who is not deemed to have reached an appropriate standard of preparation or delivery should be given detailed feedback, and should be encouraged to find training on presentation skills, and, if necessary, English speaking and writing. </p>
+            
+            
+            <p>A written record of the proposed training and advice should be made on the TAP form, and this should be checked at the next TAP.</p>
+            
+            
+            <p>There is no formal re-assessment of a failed seminar, but it would normally be appropriate for a student to be asked to make a new presentation to their research group after appropriate training. </p>
+            
+            
+            <h5>TAP meeting</h5>
+            
+            <p>If submitting at the end of year 3,following the 40 minute seminar, you will have your last TAP meeting, and should discuss the seminar and be given feedback. The TAP meeting may happen straight after your seminar, or it might be later. However, it must take place within 2 weeks of the seminar. Even if the assessor has not been present at the seminar, they should chair the TAP meeting. </p>
+            
+            
+            <p>If you are submitting your thesis at the end of year 3, please go to the Thesis Submission section.</p>
+            
+            
+            <p>If you are using the continuation year you will still need to complete a TAP meeting but the 40 minute seminar will be postponed. The TAP meeting should be held no later than Month 36 month of your studies. This meeting is an opportunity for you to plan the writing-up of your thesis, and review supervision going forward. </p>
+            
+            
+            <p>You should provide your TAP with a completed Continuation Plan Form, which covers your plans (e.g. resident in York, starting employment, etc.); the supervision arrangements for the next quarter (where, how, how often); and the current timetable, including arrangements for drafting and review of the thesis when appropriate. This will act as formal agreement between the student and supervisor. Feedback must be recorded in the TAP meeting form in SkillsForge.</p>
 
 
     - name: Notification to Submit
@@ -387,6 +510,8 @@ events:
           pt: 68
       req: Complete your Notification to Submit (exceptions for continuation year)
       outcome:
+      details: |
+            <p>Details missing</p>
 
 
     - name: Thesis Submission
@@ -395,471 +520,7 @@ events:
           pt: 72
       req: Submit your Thesis
       outcome: Hopefully you get to graduate :)
+      details: |
+            <p>Details missing</p>
 
 
-
-#Progression Criteria and Evidence
-#First Formal Review of Progress
-#University Criteria
-#
-#For progression into year 2 of a full-time PhD or MPhil programme (or equivalent stage of a part-time PhD or MPhil programme), a postgraduate researcher must demonstrate that they: 
-#
-#
-#(1) can articulate the direction their research is taking and the research questions it addresses;
-#
-#
-#(2) have planned in a realistic fashion the second year (or equivalent) of their research, indicating any risks and how these will be mitigated;
-#
-#
-#(3) have sufficient acquaintance with the relevant field of knowledge to place their research into context;
-#
-#
-#(4) have sufficient proficiency in the relevant research methods, techniques and theoretical approaches to move their research to the next stage;
-#
-#
-#(5) have undertaken all required training (including successful completion of the Research Integrity Tutorial);
-#
-#
-#(6) have considered ethical issues (including data management and authorship) where applicable and have in place an appropriate data management plan.
-#Departmental Evidence
-#
-#You cannot progress to the second year of the PhD  unless you can demonstrate that you have met the criteria noted above. There is an approved set of evidence that Computer Science progression panels use to assess whether you have met each criteria. The first year has milestones, TAP meetings, and deliverables that guide you towards meeting those requirements for your first progression point.
-#
-#
-#Year 1 TAP 1 
-#
-#25 Minute Seminar (Literature Review Seminar)
-#
-#The first milestone in a Computer Science research degree requires you to present a 25-minute seminar to other research students and staff. 
-#
-#    The seminar normally covers background and critical literature review in the chosen area of study.
-#
-#    The supervisor(s) should be present, if possible.
-#
-#    The Assessor, or an academic member of staff representing the assessor, must be present and provide feedback on the seminar.
-#
-#    The audience will ask questions at the end of the seminar.
-#
-#
-#You should assume that you are addressing a well-informed general Computer Science audience -even if this is not the case.
-#
-#    Your material and presentation should demonstrate critical engagement with background material and literature.For example, use comments such as 'this is the original method described in Smith's seminal paper of 1980';'there are now three main approaches to the problem, described for example in the widely-cited papers by Green (1998), Brown (2005), and Black (2014)'.
-#
-#    It must be clear what material has been consulted, and from what date. 
-#
-#    Your seminar must go beyond the work of your research group and the work of York researchers.
-#
-#
-#To contextualise the seminar, you might need to talk about your research plans, but this is not part of the assessment of the seminar.
-#
-#
-#It is your responsibility to organise your seminar, in consultation with your supervisor(s).
-#
-#
-#Assessment of your 25 Minute Seminar
-#
-#Your performance in the seminar is assessed on your:
-#
-#    Oral presentation,
-#
-#    Visuals,
-#
-#    Selection of material, and
-#
-#    Answers to questions. 
-#
-#The supervisor(s) and assessor should provide constructive feedback, orally and in the TAP meeting form available in SkillsForge.
-#
-#
-#The seminar is a training activity. A student who is not deemed to have reached an appropriate standard of preparation or delivery shouldbe given detailed feedback, and should be encouraged to find training on presentation skills, and, if necessary, English speaking and writing. 
-#
-#
-#A written record of the proposed training and advice should be made on the TAP form, and this should be checked at the next TAP.There is no formal re-assessment of a failed seminar, but it would normally be appropriate for a student to be asked to make a new presentation to their research group after appropriate training.
-#
-#
-#TAP meeting
-#
-#After the seminar, you will have your first TAP meeting, and formally meet your assessor. In addition to the normal TAP meeting activities, this TAP should discuss the seminar and give feedback. This should be recorded in SkillsForge. 
-#
-#
-#The TAP meeting may happen straight after your seminar, or it might be later. However, it must take place within 2 weeks of the seminar. Even if the assessor has not been present at the seminar, they should chair the TAP meeting.
-#
-#
-#Before the TAP meeting, both students and supervisors need to complete the TAP Meeting Preparation Form in SkillsForge. This should be done 1 week before the TAP meeting, to give the assessor a chance to read it. The TAP form should then be completed during the meeting. 
-#
-#
-#Year 1 TAP 2 
-#
-#During your first year of PhD study, you will be researching the area and background for your PhD, and developing appropriate skills.
-#
-#
-#For progression into year 2 of a full-time PhD or MPhil programme (or equivalent stage of a part-time PhD or MPhil programme) a student must demonstrate that they meet the criterai as set out in the Univeristy Criteria listed above. 
-#
-#
-#The main evidence on which your 1st year progress is assessed is your First Year Report and the supervisor’s report as recorded in a Progression Preparation form in SkillsForge. 
-#
-#
-#By the end of month 9 (or 18 for part-time students), you should complete a draft of your First Year Report, and have a TAP meeting so that you can gain feedback from your supervisor(s) and assessor before the review of progress. The final report is due no later than the end of week 2 in Month 11, it needs to be signed and completed by both you and your supervisor.
-#
-#
-#First year report 
-#
-#Passing progression is about evidencing that you have met the University progression criteria, according to the evidence requirements set out by the Department of Computer Science. The requirements for progression into the second year of a PhD or MPhil are largely evidenced by the First Year Report.
-#
-#    The report should be written in consultation with the supervisor(s)
-#
-#    A complete draft report must be submitted a week before the 9-month TAP meeting, and is reviewed and discussed at the TAP meeting
-#
-#    you should also complete the relevant parts of the TAP form in SkillsForge -and remind your supervisor to complete their section.
-#
-#    After the TAP meeting, the final version of your report must be submitted and completed by your supervisor no later than week 2 of month 11.
-#
-#
-#Report Format: There is no word or page limit for the first year report; it need be no longer than necessary to present the required evidence.
-#
-#The report must have the defined sections, but, within this, you may write as much or as little as you and your TAP members consider appropriate to evidence the requirements for progression.
-#
-#
-#1. Introduction should describe the direction that your research is taking and the research questions it addresses.  
-#
-#    The introduction is your submission of the department's required evidence to meet progression requirement 1.
-#
-#    This section is a first attempt at the Introduction for the final thesis, though it is likely that the content, and even the research questions, will change as the research continues.
-#
-#    Preparing the section contributes to training in the ability to succinctly and clearly summarise your research in writing.
-#
-#
-#2. Context for the research should demonstrate sufficient acquaintance with the relevant field of knowledge. 
-#
-#    The context section is your submission of the department's required evidence to meet progression requirement 3.
-#
-#    Traditionally, this section would be a critical literature review covering relevant papers etc., but it may be necessary to include definitions or other background material in the section as well. 
-#
-#    The material in this section contributes to part of the first draft in the final thesis background and review chapters.
-#
-#    Preparing this section contributes to training in literature review and in presentation of contextual material.
-#
-#
-#3. Evaluation of the research so far.
-#
-#    Summarise the contextual/background/literature areas that are currently known to require further study or analysis○State the relevant research methods, techniques and theoretical approaches to move your research to the next stage, and comment on your progress in applying these.
-#
-#    The evaluation section is your submission of the department's required evidence to meet progression requirement 4. 
-#
-#    You should note that, if there is strong evidence from your report and your supervisor's report that you do not have the practical skills required for the chosen research, you are unlikely to pass progression to year 2.
-#
-#    Preparing this section contributes to training in how to explain, justify and document the relevant methods and techniques that are used in research.
-#
-#
-#4. Plan for the research degree going forward.
-#
-#    A plan for the following year, presented as a diagram or table, or text.
-#
-#    The plan is the first part of your submission of the department's required evidence to meet progression requirement 2, which requires you to show that you have planned, in a realistic fashion, the second year (or equivalent) of your research
-#
-#    A summary of potential risks relating to the research degree, and a commentary on their mitigation. 
-#
-#    The summary should identify critical risks in relation to key requirements or milestones of your degree; for instance, a common evaluation risk is that appropriate case study material is not available, and a mitigation would outline either how this risk can be eliminated by good planning or what alternative approaches would then be tried. We are not looking for an exhaustive risk analysis, but we are looking for strong evidence that you understand that the path to the degree conclusion will not be simple, and that you are prepared to mitigate obvious pitfalls.  This is the second part of your submission of the department's required evidence to meet  progression requirement 2. 
-#
-#    Evidence that you have considered ethical issues (including data management) where applicable
-#
-#    This is your submission of the department's required evidence to meet  progression requirement 6
-#
-#    Note that both ethical considerations and risk are covered in required online training modules, which you should have noted in your TAP form in SkillsForge.  Please ensure that you comment on how this training will be applied in your research. 
-#
-#
-#Using material other than the first-year report
-#
-#You may be able to evidence some of the progression requirements using other things that you have produced in the first 11 months of your programme. 
-#
-#If you have published material, written reports on your research, or made other presentations, these can be cited as appropriate evidence.
-#
-#You should provide a URL or PDF of any such material that you would like the Progression Panel to consider as evidence of a progression requirement.
-#
-#Please ensure that the appropriate section(s) of the report clearly explains which requirements are (partially) met by the material that you submit: you cannot expect the Progression Panel to work out why you think the material you submit evidences the requirement. 
-#
-#
-#Evidencing that criteria have been met
-#
-#The main evidence on which your progress is judged is your first-year report and your supervisor's progress report.
-#
-#
-#The introduction section of the first-year report evidences criterion (1); the body of the report evidences criterion (3); and the conclusion of the report evidences requirement (4).  The supervisor’s progress report should comment on the sufficiency of these points, and the Progression Panel will discuss these with the student.
-#
-#
-#Note that, in relation to criterion (4), a student who is unable to develop proficiency in practical skills (e.g. in relevant computer programming) that are clearly essential for their research would not normally be able to progress.  
-#
-#
-#The plan, presented at the end of the first-year report and the supervisor’s comments on this in the supervisor’s progress report meet criterion (2). The text accompanying the plan should identify ethical and data management issues --evidencing criterion (6) --as well as any significant risks.
-#
-#
-#VLE Training: Students must complete the ‘Research Integrity Tutorial’ prior to their first TAP meeting. Research students are also expected to complete the ‘Being an Effective Researcher’ (BERT) and ‘Information Security Awareness’ tutorials within six months of the start of their programme, and must present at least one seminar during the first year (normally, the 25-minute seminar associated with the first TAP is sufficient, though you are encouraged to present your work to your research group regularly). Training is also discussed in the two TAP meetings.
-#
-#
-#The supervisor’s report should confirm that required training has been completed, evidencing criterion (5). Note that the training requirement also meets requirement (6), since ethical issues and research data management are covered in the required tutorials and discussion prompted in TAP meetings by the TAP form.
-#Second Formal Review of Progress
-#University Criteria
-#
-#For progression into year 3 of a full-time PhD programme (or equivalent stage of a part-time PhD programme), a postgraduate researcher must demonstrate that they: 
-#
-#
-#(1) can articulate the direction their research is taking and the research questions it addresses and how this will lead to a substantial original contribution to knowledge or understanding;
-#
-#
-#(2) have planned in a realistic fashion the third year (or equivalent) of their research, based on the expectation that the project will be completed and the thesis submitted on time, indicating any risks and how these will be mitigated;
-#
-#
-#(3) have the ability to write up their research in an appropriate academic format for it to be critically assessed by peer reviewers and examiners;
-#
-#
-#(4) have begun to acquire the wider background knowledge of their research field required for the degree of PhD;
-#
-#
-#(5) can apply the relevant research methods, techniques and theoretical approaches required to make an original contribution to knowledge or understanding;
-#
-#
-#(6) have undertaken all required training;
-#
-#
-#(7) have considered ethical issues (including data management and authorship) where applicable and have in place an appropriate data management plan.
-#Departmental Evidence
-#
-#You cannot progress to the third year of the PhD if you cannot demonstrate that you have met the University criteria noted above. There is an approved set of evidence that the Computer Science progression panel uses to assess whether you have met each criterion.  
-#
-#
-#The second year has two TAP meetings to review progress, and an objective of producing (at least) one research paper as well as the second-year report for the progression meeting (see below).
-#
-#
-#Year 2 TAP 1 
-#
-#Before the TAP meeting, both you and your supervisor(s) need to complete the TAP Meeting Preparation Form in SkillsForge. During this TAP meeting, you should discuss your progress and the feedback you received from your Year 1 progression, and what you need to achieve in the second year including your research paper.  This must be recorded in the TAP meeting form in SkillsForge during the meeting. 
-#
-#
-#Year 2 TAP 2 -Research paper and draft Year 2 report 
-#
-#At least one research paper and your draft second year report form the primary input for the Year 2 TAP 2 meeting. The report and research paper(s) should be prepared in consultation with your supervisor(s). 
-#
-#
-#Research paper(s)
-#
-#A key part of academic training is knowing when and how to write up research for a wider audience. Writing one or more research papers thus evidences both your academic achievements and your training.
-#
-#
-#The Research Paper does not evidence the progression requirements on its own, but does so when used in conjunction with what you say in your second-year report (below). It is important to understand the whole evidence requirement.
-#
-#
-#To be used as evidence for criterion 3, the following features are normally necessary:
-#
-#    The paper(s) that you use to evidence your progress should be written primarily and substantially by you (rather than by your co-authors)
-#
-#          if you have contributed sections to paper(s) primarily written by a co-author, you can use your parts as evidence
-#
-#    The paper may be something that you submitted, or will submit, to a journal, conference, workshop or doctoral symposium. It could be a technical report on your work to date, or it may be a research paper written to evidence the progression requirement.
-#
-#        you need to be clear how your paper(s) evidences the requirements for progression, in the relevant sections of your second-year report
-#
-#        the paper must be in an appropriate academic format
-#
-#            the structure must be appropriate,and you should use an appropriate template such as LNCS or IEEE
-#
-#        the paper must be suitable to be critically assessed by peer reviewers (an early draft is not acceptable).
-#
-#    Note that, whilst you are not required to also present your paper (you demonstrated an ability to present your work orally in the first year), you should consider presenting the work covered in the paper(s), e.g. to your research group or at a PG researchers' seminar.
-#
-#    If you submit a research paper that clearly has the above features, and has been peer-reviewed and accepted, then you have provided evidence for criterion 3.
-#
-#        The supervisor's report should confirm that the paper meets this evidence requirement.
-#
-#    Your paper(s)may be accepted as providing the necessary evidence for criterion 3 in conjunction with your second-year report and your supervisor's report in the following situations:
-#
-#        your paper has not yet been submitted, or has been rejected
-#
-#        the paper has been substantially written (not just edited) by co-authors
-#
-#
-#Second Year report format
-#
-#The content of the second-year report is partly dictated by the quality and quantity of the research paper(s) that are used to evidence your progression.
-#
-#
-#Where you state that a paper has (partly) met an evidence criterion, your supervisor's progress report should comment on your statement. The appropriate section of your second-year report needs to clearly, but succinctly, state how the paper evidences the relevant progression criteria, so that the supervisor can comment accurately on your statement, and the progression panel can evaluate the evidence for the requirements.
-#
-#
-#There is no word or page limit for the second-year report, but you are aiming for the report to be clear and concise.
-#
-#
-#The report must have the defined sections, but, within this, you may write as much or as little as you and your supervisor consider appropriate to evidence the requirements for progression.
-#
-#
-#1. Introduction which should describe in detail the research questions your project will answer and how this will lead to a substantial original contribution to knowledge or understanding
-#
-#    The introduction is your submission of the department's required evidence to meet progression criterion 1.
-#
-#    Unless you have changed the research questions that you are investigating, the section may (but is not required to) extend and refine the introduction that you wrote for your first-year report. 
-#
-#    If you exceeded the first criterion at your first-year progression, you may (but are not required to) simply reproduce the original introduction, but please include an opening sentence that states that, having exceeded the year one criterion, you are reproducing the original.
-#
-#    As for the first-year report, this section may be thought of as a draft of the thesis introduction, and the preparation of this section evidences your training through your ability to succinctly and clearly summarise your research in writing.
-#
-#
-#2. Background and context is the section that evidences progression requirement 4, that you have begun to acquire the wider background knowledge of your research field required for the degree of PhD. There are three ways that the evidence can be presented in this section.
-#
-#
-#a. The first year Progression Panel may have indicated that this second-year requirement has been met. In this case, this section can state that the evidence against criterion 4 was deemed to have been met, at year two level, by the year one progression panel. 
-#
-#i. You may (but are not required to) present extended coverage of the background and literature, suitable for the thesis review if this is useful to you at this point.
-#
-#ii. The Progression Panel may check that you exceeded the first-year evidence requirement sufficiently to meet the second-year requirement, but will not evaluate any extra material submitted
-#
-#b. If you have a research paper (or papers) that includes literature and background review material, then this section of your report may briefly state that the paper(s) evidence (in full or in part) progression criterion 4. You may also include additional material, to cover aspects that are not fully addressed by the paper(s).
-#
-#i. Your supervisor's report will be expected to comment on the adequacy of coverage.
-#
-#ii. The progression panel will assess the adequacy of the evidence, taking into account the supervisor's comments.
-#
-#c. If neither of the first two applies, you need to use this section to summarise the literature and background for the main areas of the PhD. The review does not have to be in-depth (this skill was assessed in the year one progression), but does need to be sufficient to meet the evidence requirements, in breadth and rigour, including good citation and ample referencing.
-#
-#
-#In all cases, the Background and context section should conclude with a short statement of how much more background and review scholarship is anticipated (in terms of both topics and time) for the thesis.
-#
-#
-#3. Methods section clearly outlines the method(s) applied (or to be applied) in development, implementation, instrumentation, analysis and evaluation, as appropriate, to demonstrate that you meet the criterion to apply the relevant research methods, techniques and theoretical approaches required to make an original contribution to knowledge or understanding. In all the following points, you may instead state that your paper(s) (partially) evidence the point. Be clear how the paper does so.
-#
-#    The methods section is your submission of the department's required evidence to meet progression criterion 5. 
-#
-#    The methods section will be the basis for methods chapter(s) in the thesis
-#
-#        if you have already applied some of the methods (etc.), include a brief summary of technical work and results
-#
-#        for methods (etc.) that are still being applied, or will be applied in the future, please include a brief summary of what remains to be done, including time estimates and an outline of risks and mitigation: you may cross-reference the plan section of your report.
-#
-#    Note that you should include, at least in outline, methods that you will use in evaluation of your research
-#
-#    Please ensure that you summarise (or state that, and how, a paper evidences) the anticipated original contributions to knowledge or understanding 
-#
-#
-#Note that, as at first year progression, failure to evidence that you have mastered the practical skills required for the research may, in itself, be sufficient to fail progression.
-#
-#
-#4. Plan for the remainder of the PhD. 
-#
-#    The plan comprises the same elements as for the first year report, and should be structured according to the guidance for the first year report.
-#
-#        The plan section is your submission of the department's required evidenceto meet progression criteria 2 and 7.
-#
-#    The plan should, where possible, focus on completion of the PhD by the end of year 3. The plan should NOT assume that substantial research can be completed during the Continuation Year.
-#
-#        Whilst planning to continue research into the Continuation Year is not a grounds for failure of progression, the Progression Panel will look carefully at such a plan, and the evaluation of the risks entailed in running research into the Continuation Year.
-#
-#        The Progression Panel will be looking for clear and achievable milestones in your research, and a coherent overall plan for remaining research, evaluation, and writing-up.
-#
-#    The plan should include the intended structure of your thesis.
-#
-#
-#Year 2 TAP meeting 2
-#
-#Before the TAP meeting, both students and supervisors need to complete the TAP Meeting Preparation Form in SkillsForge. During the TAP meeting, your draft report and research paper(s) should be discussed and you should receive constructive feedback. Feedback must be recorded in the TAP meeting form in SkillsForge during the meeting. 
-#Third Formal Review of Progress 
-#Departmental Evidence / Year 3 Milestones
-#
-#Year 3 TAP 1 
-#
-#The requirements for this TAP take the form of an audit of your progress against the thesis structure and outcomes. If your thesis structure is roughly as defined in the Year 2 Progression report, the audit report comprises a very brief update on the progress of each chapter. For every chapter that is now proposed, state:
-#
-#    That the chapter has been completed in draft; or
-#
-#    That the work for the chapter is complete and give an estimate of required writing time; or
-#
-#    That the work for the chapter is incomplete, and explain clearly what needs to be done, estimating how much time is needed to complete and write up the work;
-#
-#    Justify your estimates for points 2 and 3.
-#
-#
-#If you have changed the structure of your thesis since the Year 2 Progression report, you will need to do one of the following, as appropriate:
-#
-#    If you have significantly changed the structure of your thesis, present the whole structure as for the first time, and add some commentary to your Introduction to justify and explain the restructuring.
-#
-#    If you have a new chapter, not proposed in the plan in the progression report, present an outline of that chapter, using the section format described for the progression report.  
-#
-#    If you have removed a chapter that was proposed, explain what is removed and why, and comment on the effect of this omission for your thesis.
-#
-#
-#The Year 3 TAP 1 meeting briefly reviews your progress and any structural changes to the thesis. The TAP members may propose alternative content or structuring to you.  
-#
-#    You should also expect to discuss who will be your internal examiner, and possible external examiner(s), with your TAP.
-#
-#
-#During the first months of year 3, you should be moving from planning and designing research, to actually completing it. This TAP meeting is an opportunity to review progress in your research, experimentation and evaluation. 
-#
-#
-#You should provide your TAP with a plan that covers:
-#
-#    The planned timing of remaining research and evaluation
-#
-#    A structural outline of your thesis, comprising a list of chapters, against each of which there is an estimate ofhow much work is needed and how much writing is needed (in terms of weeks)
-#
-#
-#The TAP meeting should discuss your plans, and assess whether you will be ready to submit your thesis by the end of year 3. This must be recorded in the TAP meeting form in SkillsForge.
-#
-#
-#Note, the PhD is a 3-year programme (for full-time students), so you should aim to submit your thesis by the end of month 36.
-#
-#
-#Year 3 TAP 2 (40 Minute Seminar)
-#
-#Three months before your intended submission date (which should have been agreed at your previous TAP meeting) you should give a research seminar in a suitable departmental context.
-#
-#    This may be part of a research group seminar series, or a one-off with an invited audience. 
-#
-#    Your TAP members should be present.
-#
-#You are expected to present a specialist seminar that covers your approach and hypotheses, your method and research, your results and evaluation, and a critical commentary on your contribution to the research area. 
-#
-#    You should present as if to an audience of doctoral students in your research group's area; the standard you should aim for is that of a prize-worthy presentation at an international conference. 
-#
-#    The seminar serves several purposes:
-#
-#        To demonstrate that you can prepare and present a coherent account of your doctoral research;
-#
-#        To inform and engage other researchers in your area;
-#
-#        To allow other researchers to comment on your research whilst there is still time to take account of these in the thesis. For instance, identifying contributions that you may have overlooked, unrealistic or overlooked assumptions, missing background or better evaluation opportunities.
-#
-#
-#Assessment
-#
-#Your performance in the seminar is assessed on your:
-#
-#    Oral presentation,
-#
-#    Visuals,
-#
-#    Selection of material, and
-#
-#    Answers to questions.
-#
-#
-#The supervisor(s) and assessor(or assessor's representative) should provide constructive feedback, orally and in the TAP meeting form.
-#
-#
-#The seminar is a training activity. A student who is not deemed to have reached an appropriate standard of preparation or delivery should be given detailed feedback, and should be encouraged to find training on presentation skills, and, if necessary, English speaking and writing. 
-#
-#
-#A written record of the proposed training and advice should be made on the TAP form, and this should be checked at the next TAP.
-#
-#
-#There is no formal re-assessment of a failed seminar, but it would normally be appropriate for a student to be asked to make a new presentation to their research group after appropriate training. 
-#
-#
-#TAP meeting
-#
-#If submitting at the end of year 3,following the 40 minute seminar, you will have your last TAP meeting, and should discuss the seminar and be given feedback. The TAP meeting may happen straight after your seminar, or it might be later. However, it must take place within 2 weeks of the seminar. Even if the assessor has not been present at the seminar, they should chair the TAP meeting. 
-#
-#
-#If you are submitting your thesis at the end of year 3, please go to the Thesis Submission section.
-#
-#
-#If you are using the continuation year you will still need to complete a TAP meeting but the 40 minute seminar will be postponed. The TAP meeting should be held no later than Month 36 month of your studies. This meeting is an opportunity for you to plan the writing-up of your thesis, and review supervision going forward. 
-#
-#
-#You should provide your TAP with a completed Continuation Plan Form, which covers your plans (e.g. resident in York, starting employment, etc.); the supervision arrangements for the next quarter (where, how, how often); and the current timetable, including arrangements for drafting and review of the thesis when appropriate. This will act as formal agreement between the student and supervisor. Feedback must be recorded in the TAP meeting form in SkillsForge.
