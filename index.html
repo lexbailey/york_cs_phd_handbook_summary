@@ -2,10 +2,12 @@
 <html>
     <head>
         <title>York CS PhD Timeline</title>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js" integrity="sha512-pBSlhNUvB+td6sjW1zmR6L7c7kVWR4octUPl4tfHmzO63424nxta8aLmficEcAAswQmRqTiToi63AazDurj/Sg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.0.0/umd/react.production.min.js" integrity="sha512-bom/WJB/C/RVkBpU7ic7qopGc/CSWjj1aZhZLykucHKCZuT9h881Uh8VdvEioA6L0vQ/Tsaw1uK2Pnj312c17g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.0.0/umd/react-dom.production.min.js" integrity="sha512-HBhuJNLkfYh0Z++tgfKYCstQZzgQmMbAfK4FvzxHrUYqfI+FRnXeBn1ZXu+1NSGWissxE2ipI+eKaoRbRV2W4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js" integrity="sha512-CwxrLIN0dww6lRc/oKeZiI9oGlOob2HPMU0Yu0g+P3/G1cuTii+tt0jpyEKhilfrV7D/zmvKiVPIHUDU6xbBxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js" integrity="sha512-pBSlhNUvB+td6sjW1zmR6L7c7kVWR4octUPl4tfHmzO63424nxta8aLmficEcAAswQmRqTiToi63AazDurj/Sg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.0.0/umd/react.production.min.js" integrity="sha512-bom/WJB/C/RVkBpU7ic7qopGc/CSWjj1aZhZLykucHKCZuT9h881Uh8VdvEioA6L0vQ/Tsaw1uK2Pnj312c17g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.0.0/umd/react-dom.production.min.js" integrity="sha512-HBhuJNLkfYh0Z++tgfKYCstQZzgQmMbAfK4FvzxHrUYqfI+FRnXeBn1ZXu+1NSGWissxE2ipI+eKaoRbRV2W4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js" integrity="sha512-CwxrLIN0dww6lRc/oKeZiI9oGlOob2HPMU0Yu0g+P3/G1cuTii+tt0jpyEKhilfrV7D/zmvKiVPIHUDU6xbBxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <style>
             body{
                 background-color:#202020;
@@ -40,21 +42,43 @@
                 border-color:#005000;
                 background-color: #307f30;
             }
-            .selected-event{
-                border-color:#f08000;
+            .ev-doing {
+                border-color: #3ca4ff;
+                border-style: double;
             }
-            .month-event.ev-done {
+            .ev-done {
                 color: #444;
                 border-color: #252525;
             }
-            .month-event.ev-doing {
-                border-color: orange;
+            .selected-event{
+                border-color:#f08000;
+            }
+            @media (max-width: 45rem) {
+                .month{
+                    border-radius: 0;
+                }
+                .no-events{
+                    display:none;
+                }
+                .month-noevent{
+                    display:none;
+                }
+                .month-event{
+                    grid-row-start: 2;
+                }
+                .year{
+                    grid-template-columns:unset;
+                }
+                .month::before {
+                    content: "month ";
+                }
             }
         </style>
     </head>
     <body>
         <h1>York CS PhD Milestones</h1>
         <div style="color: red;border:5px solid red; padding:3px;">WARNING! This is a work in progress preview, lots of the content is missing or badly formatted. Do not use this yet.</div>
+        <p>Regarding issues, bugs, comments, praise: contact djab501(at)york&lt;dot&gt;ac{dot}uk</p>
         <div id="react_root">loading...</div>
         <script type="text/babel">
 
@@ -69,6 +93,7 @@
                             if (is_first) {c.push('month-first');}
                             if (is_last) {c.push('month-last');}
                             if (this.props.done) {c.push('month-done')}
+                            if (this.props.events.length > 0) {c.push('has-events')} else {c.push('no-events')}
                             return c.join(' ');
                         })()
                         }>
@@ -81,7 +106,7 @@
             class TLSmallEvent extends React.Component {
                 render() {
                     return (
-                        <div className={(this.props.events.length > 0?'month-event':'month-noevent') + (this.props.selected?' selected-event':'') + (this.props.done?' ev-done':'') + (this.props.doing?' ev-doing':'')} style={{gridCol: this.props.moy}}>
+                        <div onClick={this.props.onClick} className={(this.props.events.length > 0?'month-event':'month-noevent') + (this.props.done?' ev-done':'') + (this.props.doing?' ev-doing':'') + (this.props.selected?' selected-event':'')} style={{gridCol: this.props.moy}}>
                             {this.props.events.map(ev=>
                                 ev.name
                             )}
@@ -189,7 +214,7 @@
                                                 <TLMonth key={'m'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} done={this.is_done(i+1+(12*y))} />
                                             )}
                                             {Array.from(Array(12).keys()).map(i=>
-                                                <div onClick={ev=>{this.select(y, (y*12)+i+1)}}><TLSmallEvent key={'e'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} selected={this.state.selection==((y*12)+i+1)} done={this.is_done(i+1+(12*y)+1)} doing={this.is_done(i+1+(12*y)) && !this.is_done(i+1+(12*y)+1)}/></div>
+                                                    <TLSmallEvent onClick={ev=>{this.select(y, (y*12)+i+1)}} key={'e'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} selected={this.state.selection==((y*12)+i+1)} done={this.is_done(i+1+(12*y)+1)} doing={this.is_done(i+1+(12*y)) && !this.is_done(i+1+(12*y)+1)}/>
                                             )}
                                         </div>
                                         {
