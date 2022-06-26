@@ -47,6 +47,9 @@
                 color: #444;
                 border-color: #252525;
             }
+            .month-event.ev-doing {
+                border-color: orange;
+            }
         </style>
     </head>
     <body>
@@ -78,7 +81,7 @@
             class TLSmallEvent extends React.Component {
                 render() {
                     return (
-                        <div className={(this.props.events.length > 0?'month-event':'month-noevent') + (this.props.selected?' selected-event':'') + (this.props.done?' ev-done':'')} style={{gridCol: this.props.moy}}>
+                        <div className={(this.props.events.length > 0?'month-event':'month-noevent') + (this.props.selected?' selected-event':'') + (this.props.done?' ev-done':'') + (this.props.doing?' ev-doing':'')} style={{gridCol: this.props.moy}}>
                             {this.props.events.map(ev=>
                                 ev.name
                             )}
@@ -186,7 +189,7 @@
                                                 <TLMonth key={'m'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} done={this.is_done(i+1+(12*y))} />
                                             )}
                                             {Array.from(Array(12).keys()).map(i=>
-                                                <div onClick={ev=>{this.select(y, (y*12)+i+1)}}><TLSmallEvent key={'e'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} selected={this.state.selection==((y*12)+i+1)}  done={this.is_done(i+1+(12*y))}/></div>
+                                                <div onClick={ev=>{this.select(y, (y*12)+i+1)}}><TLSmallEvent key={'e'+(i+1+(12*y))} y={y} m={i+1+(12*y)} moy={i+1} events={this.state.data.events.filter(ev=>ev.month[this.state.mode] == (i+1+(12*y)))} selected={this.state.selection==((y*12)+i+1)} done={this.is_done(i+1+(12*y)+1)} doing={this.is_done(i+1+(12*y)) && !this.is_done(i+1+(12*y)+1)}/></div>
                                             )}
                                         </div>
                                         {
